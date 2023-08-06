@@ -1,3 +1,5 @@
+package domain.company.app.service;
+
 import java.time.Clock;
 
 public class Test {
