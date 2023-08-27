@@ -1,27 +1,31 @@
 package domain.company.app._main;
-import static domain.company.app.service.ResultWriterService.printer;
-import static domain.company.app.util.Calculator.addition;
-import static domain.company.app.util.Calculator.subtraction;
-import static domain.company.app.util.Calculator.multiplication;
+
+import domain.company.app.entity.Goat;
+import domain.company.app.entity.Horse;
+import domain.company.app.entity.Rabbit;
+import domain.company.app.entity.Zookeeper;
 
 public class _Main {
     public static void main(String[] args) {
-        int num1 = 3;
-        int num2 = 4;
+        Zookeeper ivan = new Zookeeper();
+        Goat goat1 = new Goat();
+        Horse horse1 = new Horse();
+        Rabbit rabbit1 = new Rabbit();
 
-        int additionResult = addition(num1, num2);
-        printer( num1, num2,additionResult, "addition" );
+        goat1.setName("козочка");
+        goat1.setWeightKg(19.5D);
+        horse1.setName("лошадка");
+        horse1.setWeightKg(854.6D);
+        rabbit1.setName("зайчишка");
+        rabbit1.setWeightKg(1.57D);
 
-        int subtractionResult = subtraction(num1, num2);
-        printer( num1, num2,subtractionResult, "subtraction" );
+        ivan.makeSound(goat1);
+        ivan.makeSound(horse1);
+        ivan.makeSound(rabbit1);
 
-        int multiplicationResult = multiplication(num1, num2);
-        printer( num1, num2,multiplicationResult, "multiplication" );
-
-
-
+        ivan.takeWalk(goat1);
+        ivan.takeWalk(horse1);
+        ivan.takeWalk(rabbit1);
 
     }
-
-
 }
