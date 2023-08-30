@@ -1,7 +1,6 @@
 package domain.company.app.util;
 
 public class IntArrayPractice {
-
     public int countEvenNumbers(int[] arr) {
         int count = 0;
         for (int j : arr) {

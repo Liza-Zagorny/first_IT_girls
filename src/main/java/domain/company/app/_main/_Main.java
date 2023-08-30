@@ -23,7 +23,5 @@ public class _Main {
         System.out.println("4. Сумма всех чисел в массиве: " + intArrayPractice.sum(arr));
         System.out.println("5. Разность между суммой чисел имеющих четный индекс и суммой чисел имеющих нечетный индекс в массиве:" + intArrayPractice.diffEvenIndexOddIndex(arr));
         System.out.println("6. Количество нулей в массиве:" + intArrayPractice.countZeros(arr));
-
-
     }
 }

@@ -5,5 +5,4 @@ public class GenerateRandomInt {
             // Generate random int value from min to max
             return (int)Math.floor(Math.random() * (max - min + 1) + min);
         }
-
 }
