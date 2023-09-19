@@ -19,7 +19,5 @@ public class _Main {
         System.out.println(Arrays.toString(arr));
         System.out.println("Этот же массив отсортированный от наименьшого числа к наибольшему:");
         System.out.println(Arrays.toString(secondPractice.sortNumbers(arr)));
-
-
     }
 }
